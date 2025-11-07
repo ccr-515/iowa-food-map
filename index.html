@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Iowa Food Map / Mapa de Alimentos</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">IFM</div>
+    <div>
+      <div class="title">Iowa Food Map</div>
+      <div class="subtitle">Mapa de Alimentos de Iowa</div>
+    </div>
+  </div>
+  <div class="lang">
+    <button class="btn" id="btn-en">EN</button>
+    <button class="btn" id="btn-es">ES</button>
+  </div>
+</header>
+
+<div class="alert" id="alert"></div>
+
+<div class="controls">
+  <input id="q" class="input" placeholder="Search by name or city / Buscar por nombre o ciudad">
+  <select id="type" class="select">
+    <option value="">All types / Todos</option>
+    <option value="pantry">Pantry / Despensa</option>
+    <option value="meal">Free meal / Comida gratis</option>
+    <option value="fridge">Community fridge / Refrigerador comunitario</option>
+    <option value="holiday">Holiday meal / Comida festiva</option>
+    <option value="program">Program/Other / Programa/Otro</option>
+  </select>
+  <button id="useLoc" class="btn">Use my location</button>
+</div>
+
+<div id="list"></div>
+
+<footer class="footer">
+  <div id="footer-copy"></div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
